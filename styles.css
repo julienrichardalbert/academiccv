@@ -1,0 +1,134 @@
+/* Reset some default browser styles */
+/* Header style for your name */
+.header {
+    position: absolute;
+    top: 5px; /* Adjust the top position as needed */
+    left: 15px; /* Adjust the left position as needed */
+}
+
+/* Style for your name in large letters */
+.header h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+    font-style: italic;
+    font-family: 'Helvetica Neue';
+    font-variant: small-caps;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 0.8;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+}
+
+/* Add a background color or image to the body if desired */
+body {
+    background-color: #F5F1E4;
+}
+
+/* Container for the two columns */
+.section {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Content container */
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin: 11px;
+    padding: 0px;
+}
+
+/* Left column (date) */
+.date {
+    min-width: 150px; /* Set a minimum width for the date column */
+    max-width: 150px; /* Set a maximum width for the date column */
+    text-align: right;
+    text-align: top;
+    padding-right: 22px; /* Add some right padding for spacing */
+    color: #5C53A5;
+}
+
+/* Right column (description) */
+.description {
+    margin: 0px;
+}
+
+/* Style the h2 elements */
+.description h2 {
+    margin-top: 44px;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    color: #EB7F86;
+}
+
+.money {
+    opacity: 0.25;
+}
+
+.mememe {
+    font-weight: 999;
+    color: #F8A07E;
+}
+
+.event {
+    font-weight: 999;
+    color: #000000;
+    font-variant: small-caps;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack columns on small screens */
+        align-items: flex-start; /* Align content to the left on small screens */
+    }
+
+    .date, .description {
+        flex: 1; /* Full width for both columns on small screens */
+        width: 100%; /* Make columns full width on small screens */
+    }
+    .date {
+        min-width: auto; /* Remove the minimum width on smaller screens */
+        max-width: auto; /* Remove the maximum width on smaller screens */
+        text-align: left;
+        padding-right: 0; /* Remove right padding on smaller screens */
+    }
+}
+
+/* Remove underlines from all links */
+a {
+    text-decoration: none;
+    color: #5C53A5;
+}
+
+.pdf img {
+    width: auto;
+    height: 16px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.social-icons {
+    text-align: center; /* Center-align the icons */
+    fill: red;
+}
+
+.social-icons a {
+    display: inline-block; /* Display icons in a row */
+    margin: 0 10px; /* Add horizontal spacing between icons */
+}
+
+.social-icons img {
+    width: 40px; /* Set the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
