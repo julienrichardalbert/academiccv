@@ -1,14 +1,14 @@
-/* Reset some default browser styles */
-/* Header style for your name */
+/* Most of the style here, including the flexible two-column format, was initially coded with the help by ChatGPT. Thanks, ChatGPT! */
+
+/* name in top right */
 .header {
     position: absolute;
-    top: 5px; /* Adjust the top position as needed */
-    left: 15px; /* Adjust the left position as needed */
+    top: 5px;
+    left: 15px;
 }
 
-/* Style for your name in large letters */
 .header h1 {
-    font-size: 36px; /* Adjust the font size as needed */
+    font-size: 36px;
     font-style: italic;
     font-family: 'Helvetica Neue';
     font-variant: small-caps;
@@ -17,6 +17,7 @@
     line-height: 0.8;
 }
 
+/* Main body content style */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -24,7 +25,6 @@ body, h1, h2, p {
     font-size: 22px;
 }
 
-/* Add a background color or image to the body if desired */
 body {
     background-color: #F5F1E4;
 }
@@ -50,11 +50,11 @@ body {
 
 /* Left column (date) */
 .date {
-    min-width: 150px; /* Set a minimum width for the date column */
-    max-width: 150px; /* Set a maximum width for the date column */
+    min-width: 150px;
+    max-width: 150px;
     text-align: right;
     text-align: top;
-    padding-right: 22px; /* Add some right padding for spacing */
+    padding-right: 22px; /* padding between two columns */
     color: #5C53A5;
 }
 
@@ -63,7 +63,7 @@ body {
     margin: 0px;
 }
 
-/* Style the h2 elements */
+/* use this to max 2em spaces between sections */
 .description h2 {
     margin-top: 44px;
     font-variant: small-caps;
@@ -71,6 +71,7 @@ body {
     color: #EB7F86;
 }
 
+/* special fonts */
 .money {
     opacity: 0.25;
 }
@@ -84,6 +85,11 @@ body {
     font-weight: 999;
     color: #000000;
     font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+    color: #5C53A5;
 }
 
 /* Responsive layout adjustments */
@@ -105,12 +111,6 @@ body {
     }
 }
 
-/* Remove underlines from all links */
-a {
-    text-decoration: none;
-    color: #5C53A5;
-}
-
 .pdf img {
     width: auto;
     height: 16px;
@@ -118,17 +118,17 @@ a {
     padding-top: 5px;
 }
 
+/* Social icon bouttons */
 .social-icons {
     text-align: center; /* Center-align the icons */
-    fill: red;
 }
 
 .social-icons a {
     display: inline-block; /* Display icons in a row */
-    margin: 0 10px; /* Add horizontal spacing between icons */
+    margin: 0 11px; /* Add horizontal spacing between icons */
 }
 
 .social-icons img {
-    width: 40px; /* Set the width of the icons */
-    height: auto; /* Maintain aspect ratio */
+    width: auto;
+    height: 44px; /* Maintain aspect ratio */
 }
