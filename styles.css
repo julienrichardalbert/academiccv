@@ -10,11 +10,20 @@
 .header h1 {
     font-size: 36px;
     font-style: italic;
-    font-family: 'Helvetica Neue';
+    font-family: "Helvetica Neue";
     font-variant: small-caps;
     font-weight: 500;
     letter-spacing: 0.1em;
     line-height: 0.8;
+}
+
+.last-updated {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: "Cormorant Garamond", serif;
 }
 
 /* Main body content style */
@@ -24,12 +33,12 @@ h2,
 p {
     margin: 0;
     padding: 0;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 22px;
 }
 
 body {
-    background-color: #F5F1E4;
+    background-color: #f5f1e4;
 }
 
 /* Container for the two columns */
@@ -59,7 +68,7 @@ body {
     text-align: top;
     padding-right: 22px;
     /* padding between two columns */
-    color: #5C53A5;
+    color: #5c53a5;
 }
 
 /* Right column (description) */
@@ -72,7 +81,7 @@ body {
     margin-top: 44px;
     font-variant: small-caps;
     letter-spacing: 0.1em;
-    color: #EB7F86;
+    color: #eb7f86;
 }
 
 /* special fonts */
@@ -82,18 +91,18 @@ body {
 
 .mememe {
     font-weight: 999;
-    color: #F8A07E;
+    color: #f8a07e;
 }
 
 .event {
-    font-weight: 999;
+    font-weight: 900;
     color: #000000;
     font-variant: small-caps;
 }
 
 a {
     text-decoration: none;
-    color: #5C53A5;
+    color: #5c53a5;
 }
 
 /* Responsive layout adjustments */
@@ -149,4 +158,3 @@ a {
     height: 44px;
     /* Maintain aspect ratio */
 }
-
