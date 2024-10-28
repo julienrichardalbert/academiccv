@@ -35,15 +35,16 @@ p {
     padding: 0;
     font-family: "Cormorant Garamond", serif;
     font-size: 22px;
+    font-weight: 500;
 }
 
 body {
-    background-color: #f5f1e4;
+    background-color: #f6f1e4;
 }
 
 /* Container for the two columns */
 .section {
-    max-width: 960px;
+    max-width: 720px;
     margin: 0 auto;
 }
 
@@ -68,7 +69,7 @@ body {
     text-align: top;
     padding-right: 22px;
     /* padding between two columns */
-    color: #5c53a5;
+    color: #000000;
 }
 
 /* Right column (description) */
@@ -82,6 +83,7 @@ body {
     font-variant: small-caps;
     letter-spacing: 0.1em;
     color: #eb7f86;
+    font-weight: 500;
 }
 
 /* special fonts */
@@ -89,13 +91,19 @@ body {
     opacity: 0.25;
 }
 
+/*
 .mememe {
     font-weight: 999;
     color: #f8a07e;
 }
+*/
+.mememe {
+    font-weight: bold;
+    color: #5c53a5;
+}
 
 .event {
-    font-weight: 900;
+    font-weight: 200;
     color: #000000;
     font-variant: small-caps;
 }
