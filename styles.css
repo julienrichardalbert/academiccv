@@ -1,10 +1,12 @@
 /* Most of the style here, including the flexible two-column format, was initially coded with the help by ChatGPT. Thanks, ChatGPT! */
 
-/* name in top right */
+/* name in top left */
 .header {
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 15px;
+    background-color: #f6f1e4;
+    z-index: 1000;
 }
 
 .header h1 {
@@ -18,15 +20,16 @@
 }
 
 .last-updated {
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 5px;
     font-size: 16px;
     letter-spacing: 0.05em;
     font-family: "Cormorant Garamond", serif;
+    z-index: 1000;
 }
 
-/* Main body content style */
+/* main body content style */
 body,
 h1,
 h2,
@@ -42,7 +45,7 @@ body {
     background-color: #f6f1e4;
 }
 
-/* Container for the two columns */
+/* container for the two columns */
 .section {
     max-width: 720px;
     margin: 0 auto;
@@ -53,7 +56,7 @@ body {
     margin-bottom: 100px;
 }
 
-/* Content container */
+/* content container */
 .content {
     display: flex;
     align-items: flex-start;
@@ -61,7 +64,7 @@ body {
     padding: 0px;
 }
 
-/* Left column (date) */
+/* left column (date) */
 .date {
     min-width: 150px;
     max-width: 150px;
@@ -72,7 +75,7 @@ body {
     color: #000000;
 }
 
-/* Right column (description) */
+/* right column (description) */
 .description {
     margin: 0px;
 }
@@ -86,7 +89,7 @@ body {
     font-weight: 500;
 }
 
-/* special fonts */
+/* SPECIAL FONTS */
 .money {
     opacity: 0.25;
 }
@@ -113,7 +116,7 @@ a {
     color: #5c53a5;
 }
 
-/* Responsive layout adjustments */
+/* responsive layout adjustments */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -132,12 +135,9 @@ a {
 
     .date {
         min-width: auto;
-        /* Remove the minimum width on smaller screens */
         max-width: auto;
-        /* Remove the maximum width on smaller screens */
         text-align: left;
         padding-right: 0;
-        /* Remove right padding on smaller screens */
     }
 }
 
@@ -148,21 +148,23 @@ a {
     padding-top: 5px;
 }
 
-/* Social icon bouttons */
+/* social icon bouttons */
 .social-icons {
-    text-align: center;
-    /* Center-align the icons */
+    position: fixed; 
+    top: 120px; 
+    left: 15px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    z-index: 1000;
 }
 
+/* spacing between icons */
 .social-icons a {
-    display: inline-block;
-    /* Display icons in a row */
-    margin: 0 11px;
-    /* Add horizontal spacing between icons */
+    margin: 5px 0;
 }
 
 .social-icons img {
     width: auto;
-    height: 44px;
-    /* Maintain aspect ratio */
+    height: 33px;
 }
